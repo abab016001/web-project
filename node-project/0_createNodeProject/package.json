@@ -1,0 +1,17 @@
+{
+  "name": "1_createnodeproject",
+  "version": "1.0.0",
+  "description": "1. 檢查是否安裝node.js：\r    1.1 輸入指令\r        node -v\r        npm -v\r    1.2 如果看到版號，表示安裝成功。\r    1.3 如果未安裝node.js：\r        1.3.1 輸入指令\r              nvm install --lts\r              nvm use --lts\r        1.3.2 如果看到版號，表示安裝成功。\r -\r 2. 初始化專案\r    2.1 建立專案資料夾\r        mkdir my-project\r        cd my-project\r    2.2 建立package.json 文件，記錄專案依賴與配置  \r        npm init -y\r    2.3 安裝node_module\r        npm install\r -\r 3. package.json 加入 script 快捷指令\r    \"scripts\": {\r         \"start\": \"node index.js\",\r         \"dev\": \"nodemon index.js\"\r     }\r    3.1 執行\r        npm start\r -\r 4. 建立index.js\r    4.1 建立index.js文件\r        touch index.js\r    4.2 撰寫index.js內容\r        console.log(\"Hello Node.js!\");\r    4.3 執行index.js\r        node index.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
